@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 1.8em;
+    background-color: black;
+    font-family: sans-serif;
+    justify-content: center;
+}
+nav a{
+    color: rgb(245, 240, 240);
+    text-decoration: none;
+    padding-right: 8px;
+    margin-left: 5px;
+}
+nav a:hover{
+    background-color: grey;
+}
