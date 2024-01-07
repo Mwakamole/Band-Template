@@ -4,12 +4,12 @@ body{
 }
 nav{
     font-size: 1.8em;
-    background-color: black;
+    background-color: rgb(233, 230, 230);
     font-family: sans-serif;
-    justify-content: center;
+    justify-content:center;
 }
 nav a{
-    color: rgb(245, 240, 240);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding-right: 8px;
     margin-left: 5px;
@@ -17,3 +17,7 @@ nav a{
 nav a:hover{
     background-color: grey;
 }
+#searchicon{
+    margin-left: 50%;
+
+}/*positions the search icon to the left of the navigation bar*/
