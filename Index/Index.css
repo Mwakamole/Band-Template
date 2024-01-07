@@ -17,8 +17,6 @@ nav a{
 nav a:hover{
     background-color: grey;
 }
-#searchicon{
-    margin-left: 50%;
 
 }/*positions the search icon to the left of the navigation bar*/
 .navbar a:hover i {
