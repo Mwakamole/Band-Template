@@ -3,14 +3,16 @@ body{
     padding: 0;
 }
 nav{
+    margin-top: -2.15%;/*makes the nav bar to appear at the very top of the page*/
+    margin-left: -3%;/*makes the nav bar to start at the edge of the screen*/
     font-size: 1.8em;
     background-color: rgb(233, 230, 230);
-    font-family: sans-serif;
-    justify-content:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 nav a{
     color: rgb(0, 0, 0);
     text-decoration: none;
+    padding-top: 0;
     padding-right: 8px;
     margin-left: 5px;
 }
@@ -21,3 +23,20 @@ nav a:hover{
     margin-left: 50%;
 
 }/*positions the search icon to the left of the navigation bar*/
+li{ 
+    margin: 0%;
+    list-style-type: none;
+    float: left;
+}
+.dropdown{
+    width: 10px; /*makes the dropdown items to be displayed in block form*/
+    position: absolute;
+    margin-left: -2.5%;/*places the dropdown contents directly below its parents*/
+    display: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.65em;
+}
+li:hover .dropdown{
+    display: block;
+}/*displays dropdown items when one hovers on its parent*/
+
