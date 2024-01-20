@@ -31,7 +31,7 @@ li{
 .dropdown{
     width: 10px; /*makes the dropdown items to be displayed in block form*/
     position: absolute;
-    margin-left: -2.5%;/*places the dropdown contents directly below its parents*/
+    margin-left: -2.7%;/*places the dropdown contents directly below its parents*/
     display: none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.65em;
@@ -39,4 +39,34 @@ li{
 li:hover .dropdown{
     display: block;
 }/*displays dropdown items when one hovers on its parent*/
-
+li:hover .dropdownBackground{
+    background-color: rgb(233, 230, 230); /* Set initial background to transparent */
+}
+.dropdownBackground{
+    height: 1.75cm;
+    width: 2.9cm;
+    background-color:  transparent;
+    margin-left: 25.5%;   
+    z-index: 10000000;
+}
+li:hover .dropdownBackground {
+    background-color: rgb(233, 230, 230); /* Appear on hover */
+  }
+@keyframes animatedBackground {
+    0%{background-image: url(Los\ Angeles.png);}
+    25%{background-image: url(New\ York.png);}
+    50%{background-image: url(Chicago.png);}
+    100%{background-image: url(Vegas.png);}
+}
+body{
+    animation-name: animatedBackground;
+    animation-duration: 30s;
+    animation-timing-function: steps(1);/*makes the background change instantaneoue*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-iteration-count: infinite; /*makes sure the animation to never stops*/
+    animation-delay: 0s;
+    width: 100%;
+    transition: transform 0s, opacity 0s;
+}
